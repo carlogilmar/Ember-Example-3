@@ -5,4 +5,6 @@
 {{input name='cardVerification' value=model.cardVerification placeholder='CVC' maxlength=4}}
 {{input name='cardExpiration' value=model.cardExpiration placeholder='Card Expiration: XX/XXXX'}}
 
+<button {{action 'submitForm'}}>Buy!</button>
+
 {{#link-to 'checkout.shipping-info'}}Previous{{/link-to}}
