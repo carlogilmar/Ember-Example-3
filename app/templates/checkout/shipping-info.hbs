@@ -2,5 +2,8 @@
 
 <h1>Shipping info</h1>
 
+{{input name='address' value=model.address placeholder='Enter the address'}}
+{{input name='zipCode' value=model.zipCode placeholder='ZIP Code'}}
+
 {{#link-to 'checkout.personal-info'}}Previous{{/link-to}}
 {{#link-to 'checkout.payment-info'}}Next{{/link-to}}
