@@ -9,7 +9,16 @@ export default Ember.Route.extend({
 
   actions: {
     submitForm() {
-			alert("okas");
+      //let newBoardGame = this.get('newBoardGame');
+      console.log(this.modelFor('checkout'));
+      console.log("agarrando el campo");
+
+      return this.modelFor('checkout').save().then(function(){
+        console.log("Si se pudo!!!");
+      });
+
+
+			//alert("okas");
       //this.transitionToRoute('checkout.confirmation');
     }
   }
