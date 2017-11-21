@@ -1,5 +1,9 @@
 export default function() {
 
+  this.get('/orders');
+  this.post('/orders');
+  this.get('/orders/:id');
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
